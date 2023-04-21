@@ -28,6 +28,7 @@ const Message = React.memo(
   }) => {
     const hideSideMenu = useStore((state) => state.hideSideMenu);
     const advancedMode = useStore((state) => state.advancedMode);
+    const generating = useStore.getState().generating;
 
     return (
       <div
